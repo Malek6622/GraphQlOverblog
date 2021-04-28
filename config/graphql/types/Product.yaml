@@ -1,0 +1,12 @@
+Product:
+  type: object
+  config:
+    fields:
+      id:
+        type: 'Int!'
+      name:
+        type: 'String!'
+      users:
+        type: '[User]'
+      department:
+        type: 'Department'

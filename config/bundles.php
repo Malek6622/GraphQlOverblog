@@ -12,4 +12,7 @@ return [
     Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle::class => ['all' => true],
     Symfony\Bundle\SecurityBundle\SecurityBundle::class => ['all' => true],
     Twig\Extra\TwigExtraBundle\TwigExtraBundle::class => ['all' => true],
+    Overblog\GraphQLBundle\OverblogGraphQLBundle::class => ['all' => true],
+    Overblog\GraphiQLBundle\OverblogGraphiQLBundle::class => ['dev' => true],
+    Youshido\GraphQLBundle\GraphQLBundle::class => ['all' => true],
 ];

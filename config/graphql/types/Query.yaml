@@ -1,0 +1,34 @@
+Query:
+  type: object
+  config:
+    fields:
+      User:
+        type: 'User'
+        args:
+          id:
+            description: 'Resolves User using its id.'
+            type: 'Int!'
+        resolve: "@=resolver('User', [args['id']])"
+      Product:
+        type: 'Product'
+        args:
+          id:
+            description: 'Resolves Product using its id.'
+            type: 'Int!'
+        resolve: "@=resolver('Product', [args['id']])"
+      Department:
+        type: 'Department'
+        args:
+          id:
+            description: 'Resolves Department using its id.'
+            type: 'Int!'
+        resolve: "@=resolver('Department', [args['id']])"
+      Users:
+        type: '[User]'
+        resolve: "@=resolver('Users')"
+      Departments:
+        type: '[Department]'
+        resolve: "@=resolver('Departments')"
+      Products:
+        type: '[Product]'
+        resolve: "@=resolver('Products')"
